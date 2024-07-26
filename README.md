@@ -9,7 +9,7 @@
 
 <h3>📂 <a href="https://github.com/seu-usuario/projeto2">Projeto 2: Automação de Pesquisa no Google</a></h3>
 <p><strong>Descrição:</strong> Este projeto demonstra a automação de testes de interface de usuário utilizando Selenium WebDriver em conjunto com JUnit e BDD utilizando Cucumber. Inclui exemplos de testes de login, navegação e validação de elementos.
-<p align="center"><gif src="https://github.com/eumatheussodre/Projetos-em-SeleniumJava/blob/main/Projeto%20Google%20Search/acessandoZenvia.gif" p/>
+<p align="center"><img src="https://github.com/eumatheussodre/Projetos-em-SeleniumJava/blob/main/Projeto%20Google%20Search/acessandoZenvia.gif" p/>
 
 <h3>📂 <a href="https://github.com/seu-usuario/projeto3">Projeto 3: Testes de Performance com JMeter</a></h3>
 <p><strong>Descrição:</strong> Projeto focado em testes de carga e estresse utilizando Apache JMeter. Inclui scripts de teste configurados para medir a performance de aplicações web em diferentes cenários de uso.</p>
