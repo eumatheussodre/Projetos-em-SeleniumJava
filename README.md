@@ -4,7 +4,7 @@
 
 <h2>Projetos Destacados</h2>
 
-<h3>📂 <a href="https://github.com/eumatheussodre/Projetos-em-SeleniumJava/tree/main/Projeto%20Sauce">Projeto 1: Automação de Testes com Selenium</a></h3>
+<h3>📂 <a href="https://github.com/eumatheussodre/Projetos-em-SeleniumJava/tree/main/Projeto%20Sauce">Projeto 1: Automação de Testes com Selenium utilizando BDD</a></h3>
 <p><strong>Descrição:</strong> Este projeto demonstra a automação de testes de interface de usuário utilizando Selenium WebDriver em conjunto com JUnit e BDD utilizando Cucumber. Inclui exemplos de testes de login, navegação e validação de elementos.</p>
 
 <h3>📂 <a href="https://github.com/seu-usuario/projeto2">Projeto 2: Testes de API com Postman e Newman</a></h3>
