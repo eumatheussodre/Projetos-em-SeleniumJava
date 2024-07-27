@@ -31,6 +31,9 @@ public class ContasPage extends RunCucumberTest {
     @FindBy(xpath = "(//button[@type='submit'])[2]")
     private static WebElement buttonAddConta;
 
+    @FindBy(xpath = "//button[contains(text(),'✕')]")
+    private static WebElement fechandoModal;
+
 
 
 
@@ -51,7 +54,7 @@ public class ContasPage extends RunCucumberTest {
         digitar(adicionandoConta,"111111");
         digitar(adicionandoValor,"3000000");
         selecionarComboBox(comboxContas,"Salário");
-        Thread.sleep(2000);
-        clicar(buttonAddConta);
+//        Thread.sleep(2000);
+        clicar(fechandoModal);
     }
 }

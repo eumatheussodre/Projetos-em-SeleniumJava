@@ -10,40 +10,40 @@ import static Utils.Utils.*;
 public class MetasPage extends RunCucumberTest {
 
 
-    @FindBy(id = "email")
-    private static WebElement digitandoEmail;
+    @FindBy(xpath = "//a[normalize-space()='Metas']")
+    private static WebElement acessandoModulo;
 
-    @FindBy(id = "password")
-    private static WebElement digitandoPass;
+    @FindBy(xpath = "//button[normalize-space()='Crie aqui!']")
+    private static WebElement buttonAddMeta;
 
-    @FindBy(xpath = "//button[normalize-space()='Acessar']")
-    private static WebElement clicandoButton;
+    @FindBy(xpath = "//input[@placeholder='Digite o nome da sua meta']")
+    private static WebElement addNome;
 
-    @FindBy(css = "span[class='font-bold text-3xl md:text-5xl']")
-    private static WebElement elementoApareceu;
+    @FindBy(xpath = "//input[@placeholder='Digite a descrição da sua meta']")
+    private static WebElement addMotivo;
+
+    @FindBy(xpath = "//input[@placeholder='R$ 0,00']")
+    private static WebElement addValor;
+
+    @FindBy(xpath = "(//button[@type='submit'])[2]")
+    private static WebElement buttonAdd;
 
 
     public MetasPage(){
         PageFactory.initElements(getDriver(), this);
     }
 
-    public void setDigitandoEmail(){
-        digitar(digitandoEmail,"testeqa@gmail.com");
+    public void setAcessandoModuloMetas(){
+        clicar(acessandoModulo);
     }
 
-    public void setDigitandoSenha(){
-        digitar(digitandoPass, "M@th040698");
+    public void setConfigurandoMeta() throws InterruptedException {
+        clicar(buttonAddMeta);
+        digitar(addNome,"Meta de Teste");
+        digitar(addMotivo,"Isso foi feito via Teste Automatizado!");
+        digitar(addValor,"1000");
+        aguardar();
+        clicar(buttonAdd);
     }
 
-    public void setButtonLogin(){
-        clicar(clicandoButton);
-    }
-
-    public void acessandoSite(){
-        getDriver().get("https://front-boardv1-hqfewf3xaq-rj.a.run.app/login");
-    }
-
-    public void esperarElemento(){
-        esperarElementoAparecer(elementoApareceu);
-    }
 }

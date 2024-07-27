@@ -10,40 +10,45 @@ import static Utils.Utils.*;
 public class TransacoesPage extends RunCucumberTest {
 
 
-    @FindBy(id = "email")
-    private static WebElement digitandoEmail;
+    @FindBy(xpath = "//a[normalize-space()='Transacoes']")
+    private static WebElement AcessandoTransacoes;
 
-    @FindBy(id = "password")
-    private static WebElement digitandoPass;
+    @FindBy(xpath = "//button[normalize-space()='Pague aqui!']")
+    private static WebElement pagarContas;
 
-    @FindBy(xpath = "//button[normalize-space()='Acessar']")
-    private static WebElement clicandoButton;
+    @FindBy(xpath = "//button[contains(@class,'flex w-full justify-center rounded-md bg-tela_de_fundo px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600')]")
+    private static WebElement pagandoConta;
 
-    @FindBy(css = "span[class='font-bold text-3xl md:text-5xl']")
-    private static WebElement elementoApareceu;
+    @FindBy(css = "body > div:nth-child(1) > main:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > button:nth-child(1)")
+    private static WebElement clicandoDeposito;
 
+
+    @FindBy(xpath = "(//select[@name='nameGoal'])[1]")
+    private static WebElement nomeMeta;
+
+    @FindBy(xpath = "//input[@placeholder='R$ 0,00']")
+    private static WebElement addValorDeposito;
+
+    @FindBy(xpath = "//button[contains(@class,'flex w-full justify-center rounded-md bg-tela_de_fundo px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600')]")
+    private static WebElement buttonAddMeta;
 
     public TransacoesPage(){
         PageFactory.initElements(getDriver(), this);
     }
 
-    public void setDigitandoEmail(){
-        digitar(digitandoEmail,"testeqa@gmail.com");
+    public void setAcessandoTransacoes(){
+        clicar(AcessandoTransacoes);
     }
 
-    public void setDigitandoSenha(){
-        digitar(digitandoPass, "M@th040698");
-    }
-
-    public void setButtonLogin(){
-        clicar(clicandoButton);
-    }
-
-    public void acessandoSite(){
-        getDriver().get("https://front-boardv1-hqfewf3xaq-rj.a.run.app/login");
-    }
-
-    public void esperarElemento(){
-        esperarElementoAparecer(elementoApareceu);
+    public void setConfigurandoTransacoes() throws InterruptedException {
+        aguardar();
+        clicar(pagarContas);
+        clicar(pagandoConta);
+        aguardar();
+        clicar(clicandoDeposito);
+        selecionarComboBox(nomeMeta,"Meta de Teste");
+        digitar(addValorDeposito,"150000");
+        aguardar();
+        clicar(buttonAddMeta);
     }
 }

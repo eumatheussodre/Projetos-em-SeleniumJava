@@ -10,6 +10,8 @@ public class MetasSteps {
     MetasPage metasPage = new MetasPage();
 
     @And("acessando modulo de Meta")
-    public void acessandoModuloDeMeta() {
+    public void acessandoModuloDeMeta() throws InterruptedException {
+        metasPage.setAcessandoModuloMetas();
+        metasPage.setConfigurandoMeta();
     }
 }

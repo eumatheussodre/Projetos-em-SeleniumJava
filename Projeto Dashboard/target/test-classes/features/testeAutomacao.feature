@@ -9,12 +9,12 @@ Feature: Teste Automacao
 #
 
 
-  Scenario: Realizar login corretamente no Dashboard
+  Scenario: Mexendo no Dashboard
     Given acessando o Dashboard e logando
-#    And acessando modulo de Contas
+    And acessando modulo de Contas
     And acessando modulo de Despesas
-#    And acessando modulo de Meta
-#    And acessando modulo de Transacoes
-#    And acessando modulo de Configuracoes
+    And acessando modulo de Meta
+    And acessando modulo de Transacoes
+    Then saindo da conta
 
     

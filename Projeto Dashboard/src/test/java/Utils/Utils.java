@@ -47,4 +47,8 @@ public class Utils extends RunCucumberTest {
         return elemento.getText();
     }
 
+    public static void aguardar() throws InterruptedException {
+        Thread.sleep(2000);
+    }
+
 }

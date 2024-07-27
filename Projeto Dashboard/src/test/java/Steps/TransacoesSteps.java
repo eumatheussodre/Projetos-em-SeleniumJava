@@ -10,6 +10,8 @@ public class TransacoesSteps {
     TransacoesPage transacoesPage = new TransacoesPage();
 
     @And("acessando modulo de Transacoes")
-    public void acessandoModuloDeTransacoes() {
+    public void acessandoModuloDeTransacoes() throws InterruptedException {
+        transacoesPage.setAcessandoTransacoes();
+        transacoesPage.setConfigurandoTransacoes();
     }
 }

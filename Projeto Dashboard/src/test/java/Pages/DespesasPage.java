@@ -38,7 +38,7 @@ public class DespesasPage extends RunCucumberTest {
         clicar(buttonAddDespesas);
     }
 
-    public void setPublicandoDespesa(){
+    public void setPublicandoDespesa() {
         digitar(descricao,"Despesa Teste");
         digitar(valor,"1000");
         selecionarComboBox(comboxDespesa,"Alimentação");
