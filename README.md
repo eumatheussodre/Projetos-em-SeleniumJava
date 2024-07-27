@@ -14,7 +14,7 @@
 
 <h3>📂 <a href="https://github.com/eumatheussodre/Projetos-em-SeleniumJava/tree/main/Projeto%20Dashboard">Projeto 3: Automação de Dashboard Financeiro</a></h3>
 <p><strong>Descrição:</strong> Este projeto demonstra a automação de testes de interface de usuário utilizando Selenium WebDriver em conjunto com JUnit e BDD utilizando Cucumber. Inclui exemplos de testes de login, navegação e validação de elementos.
-<p align="center"><img src="https://github.com/eumatheussodre/Projetos-em-SeleniumJava/blob/main/Projeto%20Google%20Search/acessandoZenvia.gif" p/>
+<p align="center"><img src="https://github.com/eumatheussodre/Projetos-em-SeleniumJava/blob/main/Projeto%20Dashboard/ProjetoDashboard.mp4" p/>
 
 <h2>Entre em Contato</h2>
 
