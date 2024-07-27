@@ -10,7 +10,7 @@ import static Utils.Utils.*;
 public class QuitPage extends RunCucumberTest {
 
 
-    @FindBy(xpath = "//button[normalize-space()='Sair']")
+    @FindBy(xpath = "//a[normalize-space()='Sair']")
     private static WebElement saindoDaPagina;
 
     @FindBy(id = "email")
