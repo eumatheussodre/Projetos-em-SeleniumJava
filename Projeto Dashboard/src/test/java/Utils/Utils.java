@@ -29,7 +29,7 @@ public class Utils extends RunCucumberTest {
 
     public static void esperarElementoAparecer(WebElement elemento){
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(60));
-        wait.until(ExpectedConditions.elementToBeClickable(elemento));
+        wait.until(ExpectedConditions.invisibilityOf(elemento));
     }
 
     public static void clicar(WebElement elemento){
